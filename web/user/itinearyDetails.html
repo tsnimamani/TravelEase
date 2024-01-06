@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="loading semi-dark-layout" lang="en" data-layout="semi-dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>TravelEase</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo2.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/forms/pickers/form-pickadate.css">
+
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/semi-dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/forms/pickers/form-pickadate.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static semi-dark-layout" data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Background Image -->
+    <div class="background-image" style="background-image: url('../images/bghomepage.png');background-image: cover; ">
+      <!-- BEGIN: Top Overlay Navbar -->
+      <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow" style="width: 96%;" >
+          <div class="navbar-container d-flex justify-content-between">
+              <!-- Centered buttons -->
+              <ul class="nav navbar-nav align-items-center" style="padding-left:24%;">
+                  <li class="nav-item" style="padding-right: 40px;">
+                      <a class="nav-link" href="dashboard.html"><i class="feather icon-home"></i> Home</a>
+                  </li>
+                  <li class="nav-item" style="padding-right: 40px;">
+                      <a class="nav-link" href="booking.html" >Booking </a>
+                  </li>
+                  <li class="nav-item" style="font-size: 30px;font-style: italic;">
+                      <a class="nav-link" href="dashboard.html" style="color: blue;"><b>TravelEase</b></a>
+                  </li>
+                  <li class="nav-item" style="padding-right: 40px;">
+                      <a class="nav-link" href="itineary.html" style="color: rgb(233, 230, 50);"><i class="feather icon-list"></i><b>Itinerary</b></a>
+                  </li>
+                  <li class="nav-item" style="padding-right: 40px;">
+                      <a class="nav-link" href="contact.html"><i class="feather icon-phone"></i> Contact</a>
+                  </li>
+              </ul>
+      
+              <!-- Profile button on the right -->
+              <ul class="nav navbar-nav align-items-center">
+                  <li class="nav-item dropdown dropdown-user">
+                      <a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <div class="user-nav d-sm-flex d-none">
+                              <span class="user-name font-weight-bolder">John Doe</span>
+                              <span class="user-status">Customer</span>
+                          </div>
+                          <span class="avatar">
+                              <img class="round" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40">
+                              <span class="avatar-status-online"></span>
+                          </span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+                          <a class="dropdown-item" href="profile.html"><i class="mr-50" data-feather="user"></i> Profile</a>
+                          <a class="dropdown-item" href="../login.html"><i class="mr-50" data-feather="power"></i> Logout</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <!-- END: Top Overlay Navbar -->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content">
+        <div class="content-wrapper" >
+            <div class="content-body" style="padding-top: 10%; ">
+            <div class="row justify-content-center">
+                <!-- right content section -->
+                <div class="col-9">
+                    <div class="card">
+                        <div class="card-body" style="background-image: url('../images/mas.png');background-size: cover;height:200px;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- right content section -->
+                <div class="col-9">
+                    <section id="basic-datatable" class="card">
+                        <div class="col-lg-12 mb-8">
+                            <div class="card card-custom card-stretch">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <h3 class="card-label">Trip Details</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                    <div class="form-group col-lg-6">
+                                        <label for="fp-default">Customer Name</label>
+                                            <input type="text" id="fp-default" class="form-control" value="Hashwaree" readonly/>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label for="fp-default">Booking ID</label>
+                                            <input type="text" id="fp-default" class="form-control" value="20238173" readonly/>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- right content section -->
+                <div class="col-9">
+                    <section id="basic-datatable">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <section class="users-list-wrapper section">
+                                        <div class="users-list-table">
+                                            <div class="col s12">
+                                                <div class="card-datatable">
+                                                    <table class="table" id="datatable-appt" style="text-align: center">
+                                                        <thead >
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>From</th>
+                                                                <th>To</th>
+                                                                <th>Flight</th>
+                                                                <th>Departure</th>
+                                                                <th>Arrival</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Kuala Lumpur<br> Terminal 1</td>
+                                                                <td>Kota Kinablu</td>
+                                                                <td>MH2640</td>
+                                                                <td>7:50PM<br>27/04/2023</td>
+                                                                <td>9:30PM<br>27/04/2023</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </section>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- right content section -->
+                <div class="col-9">
+                    <section id="basic-datatable" class="card">
+                        <div class="col-lg-12 mb-8">
+                            <div class="card card-custom card-stretch">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <h4 class="card-label">Payment Details</h4>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                    <div class="form-group col-lg-12">
+                                        <h5 for="fp-default">Amount</h5>
+                                            <h6 class="card-label">RM 236.00</h6>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Payment Method</label>
+                                        <select class="form-control" id="payment" readonly>
+                                            <option selected="" disabled="">-- Select One --</option>
+                                            <option>Online Banking</option>
+                                            <option>E-Wallet</option>
+                                            <option selected="">Credit Card</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
+    <script src="../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <script src="../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+    <script src="../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
+    <script src="../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
+    <script src="../app-assets/js/scripts/forms/pickers/form-pickers.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        });
+         var table = $(document).ready(function() {
+
+            $('#datatable-appt').DataTable({
+                responsive: true,
+                buttons: [
+                    'excelHtml5',
+                    'pdfHtml5',
+                ],
+                "order": [[ 0, "asc" ]],
+            });
+        } );
+
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>

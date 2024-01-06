@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="loading semi-dark-layout" lang="en" data-layout="semi-dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>TravelEase</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo2.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/semi-dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/hr/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/hr/style.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/data-tables/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/data-tables/css/select.dataTables.min.css" >
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/data-tables.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/page-users.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static semi-dark-layout" data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Background Image -->
+    <div class="background-image" style="background-image: url('../images/bookingBg.jpg');height:50%; background-size: cover;">
+      <!-- BEGIN: Top Overlay Navbar -->
+      <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow" style="width: 96%;" >
+          <div class="navbar-container d-flex justify-content-between">
+              <!-- Centered buttons -->
+              <ul class="nav navbar-nav align-items-center" style="padding-left:24%;">
+                  <li class="nav-item" style="padding-right: 40px;">
+                      <a class="nav-link" href="#" style="color: rgb(233, 230, 50);"><i class="feather icon-home"></i><b>Home</b></a>
+                  </li>
+                  <li class="nav-item" style="padding-right: 40px;">
+                      <a class="nav-link" href="booking.html" >Booking </a>
+                  </li>
+                  <li class="nav-item" style="font-size: 30px;font-style: italic;">
+                      <a class="nav-link" href="dashboard.html" style="color: blue;"><b>TravelEase</b></a>
+                  </li>
+                  <li class="nav-item" style="padding-right: 40px;">
+                      <a class="nav-link" href="itineary.html"><i class="feather icon-list"></i> Itinerary</a>
+                  </li>
+                  <li class="nav-item" style="padding-right: 40px;">
+                      <a class="nav-link" href="contact.html"><i class="feather icon-phone"></i> Contact</a>
+                  </li>
+              </ul>
+      
+              <!-- Profile button on the right -->
+              <ul class="nav navbar-nav align-items-center">
+                  <li class="nav-item dropdown dropdown-user">
+                      <a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <div class="user-nav d-sm-flex d-none">
+                              <span class="user-name font-weight-bolder">John Doe</span>
+                              <span class="user-status">Customer</span>
+                          </div>
+                          <span class="avatar">
+                              <img class="round" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40">
+                              <span class="avatar-status-online"></span>
+                          </span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+                          <a class="dropdown-item" href="profile.html"><i class="mr-50" data-feather="user"></i> Profile</a>
+                          <a class="dropdown-item" href="../login.html"><i class="mr-50" data-feather="power"></i> Logout</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <!-- END: Top Overlay Navbar -->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content">
+        <div class="content-wrapper" >
+            <div class="content-body" style="padding-top: 18%; ">
+            <div class="row justify-content-center">
+                <!-- right content section -->
+                <div class="col-9">
+                    <div class="card" style="background-color: rgba(255, 255, 255, 0.658);">
+                        <div class="card-body">
+                            <div class="row match-height">
+                                <!-- Greetings Card starts -->
+                                <div class="col-lg-5 col-md-12 col-sm-12">
+                                    <div class="card " style="background-color: #01345b; color: white;">
+                                        <div class="card-body">
+                                            <h2 class="mb-75 mt-2 pt-50 text-white font-weight-bolder">Hello, John Doe!</h3>
+                                            <p class="card-text font-small-3 text-warning">Welcome to TravelEase Booking System</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Greetings Card ends -->
+        
+                                <div class="col-xl-7 col-md-6 col-12">
+                                    <div class="card card-statistics">
+                                        <div class="card-body statistics-body">
+                                            <div class="row" style="padding-top: 20px;">
+                                                <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-xl-0 mr-4">
+                                                    <div class="media">
+                                                        <div class="avatar bg-light-info mr-2 ">
+                                                            <div class="avatar-content">
+                                                                <i data-feather="users" class="avatar-icon"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="media-body my-auto">
+                                                            <h4 class="font-weight-bolder mb-0">2</h4>
+                                                            <p class="card-text font-small-3 mb-0">Daily Visit</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-xl-0 mr-4">
+                                                    <div class="media">
+                                                        <div class="avatar bg-light-success mr-2">
+                                                            <div class="avatar-content">
+                                                                <i data-feather="calendar" class="avatar-icon"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="media-body my-auto">
+                                                            <h4 class="font-weight-bolder mb-0">12</h4>
+                                                            <p class="card-text font-small-3 mb-0">Booking</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- right content section -->
+                <div class="col-9">
+                    <div class="content-header row">
+                        <div class="col-12">
+                            <h4 class="content-header-title float-left mb-0"><b>POPULAR PLACES</b></h4>
+                        </div>
+                    </div><br>
+                    <div class="row match-height">
+                        <!-- Greetings Card starts -->
+                        <div class="col-lg-5 col-md-12 col-sm-12">
+                            <div class="card " style="background-color: #01345b; color: white;">
+                                <img class="card-img-top" src="../images/bghomepage.png" alt="Card Image" style="width: 100%;">
+                            </div>
+                        </div>
+                        <!-- Greetings Card ends -->
+
+                        <div class="col-xl-7 col-md-6 col-12">
+                            <div class="col-12">
+                                <h4 class="content-header-title float-left mb-0"><b>London, England</b></h4><br><br>
+                                <h6 class="content-header-title float-left mb-0">The historic charm of buildings like the Tower of London and Westminster Abbey to t
+                                    he modern architectural wonders like The Shard and the Gherkin, 
+                                    there's a stunning juxtaposition of old and new.The historic charm of buildings like the Tower of London and Westminster Abbey to t
+                                    he modern architectural wonders like The Shard and the Gherkin, 
+                                    there's a stunning juxtaposition of old and new.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- right content section -->
+                <div class="col-9">
+                    <div class="row match-height">
+                        <!-- Greetings Card starts -->
+                        <div class="col-lg-5 col-md-12 col-sm-12">
+                            <div class="card " style="background-color: #01345b; color: white;">
+                                <img class="card-img-top" src="../images/contact.png" alt="Card Image" style="width: 100%;">
+                            </div>
+                        </div>
+                        <!-- Greetings Card ends -->
+
+                        <div class="col-xl-7 col-md-6 col-12">
+                            <div class="col-12">
+                                <h4 class="content-header-title float-left mb-0"><b>Seoul, Korea</b></h4><br><br>
+                                <h6 class="content-header-title float-left mb-0">The historic charm of buildings like the Tower of London and Westminster Abbey to t
+                                    he modern architectural wonders like The Shard and the Gherkin, 
+                                    there's a stunning juxtaposition of old and new.The historic charm of buildings like the Tower of London and Westminster Abbey to t
+                                    he modern architectural wonders like The Shard and the Gherkin, 
+                                    there's a stunning juxtaposition of old and new.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
+    <script src="../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <script src="../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+    <script src="../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
+    <script src="../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
+    <script src="../app-assets/js/scripts/forms/pickers/form-pickers.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        });
+         var table = $(document).ready(function() {
+
+            $('#datatable-user').DataTable({
+                responsive: true,
+                buttons: [
+                    'excelHtml5',
+                    'pdfHtml5',
+                ],
+                "order": [[ 0, "asc" ]],
+            });
+        } );
+
+    </script>
+
+</body>
+<!-- END: Body-->
+
+</html>
