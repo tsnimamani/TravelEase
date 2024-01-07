@@ -90,8 +90,7 @@
   } @else {
     @include media-breakpoint-down(xs) {
       height: calc(
-        100vh -
-          calc(
+        100vh - calc(
             calc(calc(#{$contentPadding} * #{$spacingSides}) - calc(0.8rem * #{$spacingSides})) + #{$navbarHeight} + #{$footerHeight} +
               #{$floatingNavMargin} + #{$horizontalMenuHeight}
           )
