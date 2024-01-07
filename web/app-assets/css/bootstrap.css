@@ -32,7 +32,8 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Montserrat", Helvetica, Arial, serif;
-  --font-family-monospace: "Montserrat", Helvetica, Arial, serif; }
+  --font-family-monospace: "Montserrat", Helvetica, Arial, serif; 
+}
 
 *,
 *::before,
@@ -5914,7 +5915,7 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports (position: sticky) {
+@supports {
   .sticky-top {
     position: sticky;
     top: 0;
